@@ -1,0 +1,36 @@
+{
+  "runtime": "bedrock_converse",
+  "reasoning_effort": "high",
+  "model": "us.openai.gpt-5.6-luna",
+  "input_usd_per_mtok": 0.22,
+  "output_usd_per_mtok": 1.32,
+  "aws_region": "us-east-1",
+  "aws_profile": "",
+  "max_searches": 80,
+  "max_fetches": 12,
+  "max_rounds": 16,
+  "max_final_ranking_attempts": 2,
+  "query_concurrency": 5,
+  "max_search_calls_per_round": 5,
+  "max_grep_calls_per_round": 10,
+  "max_fetch_calls_per_round": 10,
+  "max_tokens": 8192,
+  "cache_read_multiplier": 0.1,
+  "cache_write_multiplier": 1.25,
+  "max_chunks": 20,
+  "document_max_chunks": 200,
+  "document_max_chars": 60000,
+  "timeout_s": 900,
+  "tag": "browsecomp-plus",
+  "ranking_params": {
+    "source_boost": 0,
+    "freshness_boost": 0,
+    "content_diversification": {
+      "enabled": false
+    },
+    "reranker": {
+      "enabled": true,
+      "threshold": 0.05
+    }
+  }
+}
